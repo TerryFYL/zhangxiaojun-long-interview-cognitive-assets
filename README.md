@@ -4,6 +4,12 @@
 
 本仓库当前包含 26 期视频的来源索引、结构化 episode cards、跨集 JSONL 数据、156 张认知边界卡、HTML 工作台、处理协议和复现脚本。
 
+## 原始账号
+
+- B站主页：[张小珺商业访谈录](https://space.bilibili.com/280780745)
+
+![张小珺商业访谈录 B站主页截图](assets/bilibili-homepage.png)
+
 ## 可以直接使用的内容
 
 - `data/source_videos.json`: 原始 Bilibili 视频来源索引，含 BV 号、标题、发布时间、时长和原始链接。
