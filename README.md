@@ -20,6 +20,13 @@
 - `protocol/长素材认知代谢协议.md`: 后续处理其他长访谈、播客、课程资料时可复用的协议。
 - `tools/`: 本次工作流用到的脚本。
 
+## 项目沉淀
+
+- `docs/PROJECT_LEDGER.md`: 本项目最值得复用和维护的资产总账。
+- `docs/RUNBOOK_NEW_MATERIAL.md`: 下一批视频、播客、访谈资料的处理手册。
+- `docs/ROADMAP_AND_INTEGRATIONS.md`: 流程优化和系统连接路线图。
+- `docs/OPTIMIZATION_INBOX.md`: 后续优化点的固定入口。
+
 ## 有意不包含的内容
 
 本仓库不包含完整字幕、逐字稿、SRT、ASR segment JSON、chunk 级中间抽取缓存或音视频文件。
