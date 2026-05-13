@@ -1,0 +1,623 @@
+{
+  "episode_id": "BV1ZmAQekEMc",
+  "bvid": "BV1ZmAQekEMc",
+  "title": "逐篇讲解DeepSeek、Kimi、MiniMax注意力机制新论文——“硬件上的暴力美学”",
+  "episode_type": "paper_explainer",
+  "guest": {
+    "name": "杨松林",
+    "role": "注意力机制领域研究者及产业实践者",
+    "org": "DeepSig / Kimi / MiniMax"
+  },
+  "domains": [
+    "人工智能",
+    "大规模预训练模型",
+    "注意力机制",
+    "硬件加速与算法协同设计"
+  ],
+  "core_question": "如何通过硬件友好且高效的注意力机制创新设计，提升大模型的预训练和推理效率以及扩展能力？",
+  "one_sentence_takeaway": "本集深入解析了动态稀疏注意力、多分支门控机制和混合线性软硬结合架构的最新论文，强调硬件暴力美学理念及算法与硬件协同优化对未来大模型性能和规模突破的关键作用。",
+  "terry_relevance": [
+    "为Terry的AI科研军团提供前沿注意力机制设计的可迁移模型和数学优化方法，如动态稀疏注意力、Bashify矩阵乘法等，指导软硬件协同研发。",
+    "助力产品判断注意力机制在长序列推理与硬件适配中的权衡设计，提升大模型推理效率及动态扩展能力，增强产品竞争力。",
+    "支持投资观察通过理解混合架构规模验证及论文开源对行业认可度的影响，评估新兴模型技术路线及团队潜力。",
+    "丰富知识系统建设中关于硬件暴力美学、门控机制、多头缓存优化和状态递归模型等核心概念，提升团队整体技术沉淀与内部培训效率。"
+  ],
+  "high_value_segments": [
+    {
+      "timestamp": "[4:18-5:31]",
+      "topic": "动态稀疏注意力与混合线性注意力比较",
+      "why_it_matters": "揭示动态吸收注意力如何降低Transformer推理和训练的计算开销，以及MiniMax采用混合模型方案的优势，指导设计高效大模型结构。",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "timestamp": "[15:44-21:44]",
+      "topic": "Lative Sparse Attention的硬件适配及训练性能优势",
+      "why_it_matters": "首次将动态稀疏注意力应用于大规模预训练，解决硬件对齐难题，实现训练和推理的速度提升，对Terry产品和科研策略具有重要参考价值。",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "timestamp": "[10:01-10:37]",
+      "topic": "自注意力机制核心原理解读",
+      "why_it_matters": "提供注意力机制基础认知，是理解后续论文设计思想和效率优化的基础，帮助广大技术及非技术人员理解Transformer成功的原因。",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "timestamp": "[22:44-29:53]",
+      "topic": "Lative Sparse Attention的三分支结构和门控机制",
+      "why_it_matters": "该机制通过粗粒度attention选取Top-N细粒度块及滑动窗口attention，并利用门控学得各分支贡献，平衡效率与表现，适合硬件加速。",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "timestamp": "[30:03-36:16]",
+      "topic": "Group Query Attention (GQA) 与 Multi-Head Attention (MHA)对Key-Value缓存的影响",
+      "why_it_matters": "理解GQA和MHA对KV缓存的共享策略及开销，有助优化多头注意力的存储与访存，设计适合硬件限制的加速方案。",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "timestamp": "[39:12-44:22]",
+      "topic": "Flash Attention中的Blocking策略与内存层次利用",
+      "why_it_matters": "Blocking分块计算和利用高速共享内存(S1)减少GPU显存(HBM)通信，提高计算效率，是面向硬件优化attention的关键技术。",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "timestamp": "[44:36-45:54]",
+      "topic": "稀疏注意力中query block与kv block访问难点与bashify方案",
+      "why_it_matters": "揭示了稀疏注意力因每个query需要不同kv block导致内存访问效率低，介绍了基于gqa多头共享kv的bashify矩阵计算策略以提升效率",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "timestamp": "[56:01-59:55]",
+      "topic": "预训练对稀疏注意力性能的关键影响及train-from-scratch的出路",
+      "why_it_matters": "突出预训练阶段对sparse attention效能的提升作用，强调只有从头训练才能突破fullattention性能上限，指向divsqt的新方向",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "timestamp": "[1:03:19-1:05:56]",
+      "topic": "动态稀疏性（dynamic sparsity）带来的推理效率和性能提升",
+      "why_it_matters": "展示动态稀疏方案在长序列推理上带来十倍加速且性能不降，结合多组分共享kvcache减少内存读取，提升推理效率",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "timestamp": "[1:07:37-1:10:29]",
+      "topic": "Lattice Block Attention的block selection机制及其关键性",
+      "why_it_matters": "block selection机制是影响训练信号传递和模型效果的核心，优劣直接决定性能。该机制通过可反向传播的设计实现更优训练效果，展现了硬件适配的重要性。",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "timestamp": "[1:11:32-1:13:56]",
+      "topic": "硬件高效的暴力美学和训练效率提升",
+      "why_it_matters": "该方法在硬件层面通过大胆的设计（如group query共享kvblock）实现了训练与推理的高效率，使得预训练和解码速度显著提升，对底层硬件友好，降低了训练成本。",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "timestamp": "[1:19:07-1:26:16]",
+      "topic": "Kimi模型设计简约、高效及实现细节",
+      "why_it_matters": "Kimi模型在quest框架下进行简化设计，去除多余分支，依赖SGD实现高质量block selection，且通过预先聚合query token减少冗余计算，推动动态稀疏注意力的预训练发展。",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "当前大模型注意力机制的计算开销是平方级别，与长序列推理长度成正相关，限制了模型的推理扩展能力",
+      "speaker": "杨松林",
+      "topic": "注意力机制计算复杂度",
+      "timestamp": "[4:27-4:49]",
+      "confidence": "high",
+      "terry_relevance": "指导构建高效注意力机制以优化大规模推理和训练流程",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "claim": "动态稀疏注意力比固定模式的静态稀疏注意力更灵活，能够针对每个查询动态确定关注的key和value区域",
+      "speaker": "杨松林",
+      "topic": "动态稀疏注意力设计",
+      "timestamp": "[6:08-7:18]",
+      "confidence": "high",
+      "terry_relevance": "推动设计适应更广泛场景的动态计算机制",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "claim": "许多公司对架构创新持谨慎态度，更多依赖已有数据与模型，缺乏架构层面的冒险精神",
+      "speaker": "主持人",
+      "topic": "AI公司架构创新态度",
+      "timestamp": "[0:44-1:06]",
+      "confidence": "medium",
+      "terry_relevance": "强调持续探索架构创新在产品与科研中的战略价值",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "claim": "Lative Sparse Attention通过三个分支（粗粒度attention，Top-N细粒度attention，滑动窗口attention）及门控机制自适应调整各分支权重，实现高效且灵活的attention计算",
+      "speaker": "访谈者",
+      "topic": "Lative Sparse Attention设计",
+      "timestamp": "[22:44-28:43]",
+      "confidence": "high",
+      "terry_relevance": "为Terry研究和实现硬件友好高效的稀疏注意力机制提供设计参考",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "claim": "Group Query Attention通过组内共享Key和Value降低KV缓存大小及读取开销，但需保证组内所有head选择相同的KV块以利于硬件加速",
+      "speaker": "访谈者",
+      "topic": "GQA与KV缓存优化",
+      "timestamp": "[31:20-39:05]",
+      "confidence": "high",
+      "terry_relevance": "指引Terry设计节省内存访问且硬件友好的多头注意力计算方案",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "claim": "Flash Attention通过Blocking技术利用共享高速内存减少全局内存访问，降低显存带宽瓶颈，从而实现高效计算",
+      "speaker": "访谈者",
+      "topic": "Flash Attention硬件加速",
+      "timestamp": "[39:26-44:22]",
+      "confidence": "high",
+      "terry_relevance": "为Terry打造高效内存访问策略及加速硬件算法提供案例和实现思路",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "claim": "稀疏注意力中，每个query对应的kv块不同，导致连续读取query block时存在大量无效内存访问，降低计算效率",
+      "speaker": "unknown",
+      "topic": "Sparse Attention Efficiency",
+      "timestamp": "[44:36-45:07]",
+      "confidence": "high",
+      "terry_relevance": "指导AI模型硬件实现时优化内存访问，提升稀疏注意力推理效率",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "claim": "通过让多个attention头共享相同key和value block，并扩展隐藏头维度，可以实现bashify矩阵乘法，提升计算效率",
+      "speaker": "unknown",
+      "topic": "Matrix Multiplication Optimization",
+      "timestamp": "[45:22-46:05]",
+      "confidence": "high",
+      "terry_relevance": "提供一种稀疏Attention硬件加速的数学技巧，对优化Tensor Core使用有指导意义",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "claim": "只有从头训练（train from scratch）新的稀疏注意力机制，才能有可能超过full attention的性能天花板",
+      "speaker": "unknown",
+      "topic": "Training Strategy for Sparse Attention",
+      "timestamp": "[59:03-1:00:06]",
+      "confidence": "high",
+      "terry_relevance": "对设计和训练稀疏注意力模型给出策略指导，利于提升模型性能与效率",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "claim": "block selection机制的设计直接决定了模型的训练信号质量和最终表现",
+      "speaker": "unknown",
+      "topic": "block selection",
+      "timestamp": "[1:07:37-1:09:44]",
+      "confidence": "high",
+      "terry_relevance": "指导开发高效注意力机制，优化训练信号路径提升模型性能",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "claim": "Lattice Block Attention通过硬件友好的设计实现了训练和推理的高效率，降低了计算成本",
+      "speaker": "unknown",
+      "topic": "硬件适配与效率",
+      "timestamp": "[1:11:32-1:16:45]",
+      "confidence": "high",
+      "terry_relevance": "为硬件受限环境设计高效注意力机制，提升训练和推理吞吐量，降低能耗",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "claim": "Kimi模型通过去除冗余分支和利用SGD实现有效的动态块选择，提高模型简洁性和计算效率",
+      "speaker": "unknown",
+      "topic": "模型设计和优化",
+      "timestamp": "[1:19:07-1:26:16]",
+      "confidence": "high",
+      "terry_relevance": "启示简约而有效的模型架构设计，提高训练时硬件利用率和预训练效率",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    }
+  ],
+  "mental_models": [
+    {
+      "name": "动态稀疏注意力 (Dynamic Sparse Attention)",
+      "definition": "每个查询（query）动态决定关注的连续key和value块，从而减少不必要的注意力计算，实现更高计算效率和硬件友好性",
+      "source_observation": "Kimi和DeepSig的论文采用动态吸收注意力，区别于静态预设的稀疏模式 (timestamp [6:08-7:18], [15:44-18:30])",
+      "timestamp": "[6:08-7:18], [15:44-18:30]",
+      "where_it_applies": [
+        "长序列推理",
+        "大规模模型预训练",
+        "硬件效率优化"
+      ],
+      "where_it_fails": "在硬件不支持连续访问或索引开销过大时性能受限",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "name": "混合模型注意力 (Hybrid Attention Model)",
+      "definition": "结合线性注意力与传统稀疏注意力，通过改用线性注意力层减少计算和推理时间，提高模型扩展性",
+      "source_observation": "MiniMax采用线性与稀疏注意力结合方案，大幅降低解码时间开销 (timestamp [5:07-5:31])",
+      "timestamp": "[5:07-5:31]",
+      "where_it_applies": [
+        "推理加速",
+        "长序列上下文处理"
+      ],
+      "where_it_fails": "线性注意力可能在信息捕获能力上不及全连接注意力",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "name": "三分支门控稀疏注意力模型",
+      "definition": "将注意力分为粗粒度块选择、Top-N细粒度块注意力、滑动窗口局部注意力三条分支，通过学习门控系数动态调节各分支贡献以平衡性能和资源使用",
+      "source_observation": "描述三个分支分别计算注意力，且用门控融合输出，每个门控由模型根据输入token表示自学习（22:44-28:43）",
+      "timestamp": "[22:44-28:43]",
+      "where_it_applies": [
+        "高效稀疏注意力设计",
+        "硬件友好计算",
+        "长序列模型"
+      ],
+      "where_it_fails": "门控学习失败或门控设计不合理时，可能导致子模块贡献失衡和性能下降",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "name": "Group Query Attention缓存共享模型",
+      "definition": "多头注意力中，将多个head分组共享Key和Value缓存，降低缓存维度和读写开销，需保证组内所有head选择相同Key-Value块，以保证缓存访问一致性和硬件加速",
+      "source_observation": "说明GQA共享KV导致缓存大小骤减，并且组内head由融合得出统一block选择(31:20-39:05)",
+      "timestamp": "[31:20-39:05]",
+      "where_it_applies": [
+        "内存受限硬件",
+        "多头注意力优化",
+        "模型推理加速"
+      ],
+      "where_it_fails": "组内head选择不同KV块打破一致性，导致缓存访问开销增加",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "name": "Bashify矩阵成法",
+      "definition": "通过利用多头共享相同key和value block，将多个head的计算合并到隐藏头维度上，从而凑成一个更大的矩阵乘法，充分利用GPU的Tensor Core高效计算能力",
+      "source_observation": "gqa利用共享kv，按隐藏头维度扩展，实现bashify矩阵计算 [45:22-46:05]",
+      "timestamp": "[45:22-46:05]",
+      "where_it_applies": [
+        "多头注意力计算中共享key-value情况下",
+        "GPU Tensor Core优化矩阵乘法"
+      ],
+      "where_it_fails": "当隐藏头数不能满足最小矩阵尺寸要求，或者头部切分不均匀时难以应用",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "name": "动态稀疏性提升推理效率模型",
+      "definition": "通过动态选择key-value缓存块，并结合group与hide维度共有的结构，减少内存访问量，实现比传统全注意力更快的推理速度且保持甚至提升性能",
+      "source_observation": "dynamic sparsity方案在长序列上带来10倍加速，且性能优于全attention [1:03:19-1:05:56]",
+      "timestamp": "[1:03:19-1:05:56]",
+      "where_it_applies": [
+        "长序列推理",
+        "对速度与精度均有较高要求的稀疏注意力"
+      ],
+      "where_it_fails": "短序列或硬件不支持动态cache管理时效果有限",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "name": "可反向传播的block selection机制",
+      "definition": "通过引入可反向传播的压缩分支，使得block选取过程能回传梯度，提高训练信号质量和模型最终表现。",
+      "source_observation": "片段中强调没有压缩分支会导致训练信号传递中断，可反传机制是提升性能的关键",
+      "timestamp": "[1:07:37-1:10:29]",
+      "where_it_applies": [
+        "注意力机制中的稀疏选块策略",
+        "复杂模型训练中信号传递"
+      ],
+      "where_it_fails": "硬件不足时反向传播开销可能较大，训练成本增加",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "name": "硬件暴力美学",
+      "definition": "在设计模型注意力机制时，采用极致的硬件友好操作（如共享kv块、多query并行处理），牺牲部分理论完美性以换取整体计算效率和性能平衡。",
+      "source_observation": "大胆分享group query的kv块，虽然存在性能顾虑，但依靠增加高维度和辅助分支抵消影响，提高硬件运行效率",
+      "timestamp": "[1:11:32-1:16:45]",
+      "where_it_applies": [
+        "高性能硬件适配优化",
+        "大规模训练和推理流程"
+      ],
+      "where_it_fails": "在对准确率极度敏感的场景可能有性能损失",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    }
+  ],
+  "decision_rules": [
+    {
+      "rule": "当面临长序列推理需求时，应优先采用动态稀疏注意力以降低计算开销，同时兼顾硬件友好性",
+      "scope": "设计大规模Transformer模型的推理阶段",
+      "anti_pattern": "依赖静态预设的稀疏模式导致适应性不足和计算资源浪费",
+      "timestamp": "[4:49-6:58],[15:44-21:44]",
+      "source_reasoning": "动态根据query选择关键块，减少不必要的计算且支持硬件优化，提升整体效率",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "rule": "当模型需要扩展解码推理时间（test-time scaling）时，应采用混合线性与稀疏注意力机制，以缩短推理时间和提升扩展性",
+      "scope": "设计需要大规模推理时间扩展的模型",
+      "anti_pattern": "全采用传统平方复杂度的全连接注意力，导致推理时间瓶颈",
+      "timestamp": "[5:07-5:31],[12:14-12:49]",
+      "source_reasoning": "线性注意力减少解码开销，有助于实现大规模模型的推理扩展",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "rule": "当采用Group Query Attention时，应强制组内所有head选择相同KV块以减少缓存读取开销和提升推理效率",
+      "scope": "多头注意力硬件加速设计，尤其KV缓存共享场景",
+      "anti_pattern": "允许组内head自由选择不同KV块导致缓存访问爆炸式增加",
+      "timestamp": "[36:16-39:05]",
+      "source_reasoning": "共享KV缓存的组如果分头访问不同块，会引发大量重复读写，增加延迟和带宽压力",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "rule": "为保证高效attention计算，应采用Blocking策略将query和key-value分块加载到高速共享内存中，减少显存带宽消耗",
+      "scope": "硬件友好attention计算和加速，特别GPU上的flash attention实现",
+      "anti_pattern": "一次性从全局显存读取所有token，导致带宽瓶颈和延迟",
+      "timestamp": "[39:26-44:22]",
+      "source_reasoning": "共享高速缓存(s1)能加快内存访问速度，减少显存(HBM)访问次数，是flash attention的加速瓶颈突破点",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "rule": "当稀疏注意力中query对应的kv块数量不同且不连续时，不应使用传统连续query block读取策略，应采用共享kv及bashify矩阵计算来提升效率",
+      "scope": "稀疏注意力硬件实现",
+      "anti_pattern": "盲目使用flash attention连续读query block，导致内存访问效率低",
+      "timestamp": "[44:36-45:54]",
+      "source_reasoning": "连续读取策略对sparse attention无效，采用共享kv借助bashify矩阵法提升效率",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "rule": "在设计稀疏注意力机制时，若期望突破full attention性能上限，应优先考虑从头训练新的attention架构，而非仅基于full attention预训练阶段进行修改",
+      "scope": "稀疏注意力模型训练策略",
+      "anti_pattern": "基于full attention预训练模型直接微调sparse attention，导致性能受限",
+      "timestamp": "[56:01-59:55]",
+      "source_reasoning": "预训练sparse attention性能优于fullattention只有在train from scratch时实现",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    }
+  ],
+  "entities": {
+    "people": [
+      "杨松林",
+      "梁文峰",
+      "杨志玲",
+      "韩松",
+      "苏建宁",
+      "LSTM作者团队",
+      "e-sort"
+    ],
+    "orgs": [
+      "DeepSig",
+      "Kimi",
+      "MiniMax",
+      "MIT",
+      "OpenAI",
+      "谷歌",
+      "MSI",
+      "Latiny团队",
+      "NVDF",
+      "微软",
+      "IVN",
+      "阿里",
+      "曼塔"
+    ],
+    "products": [
+      "A100 GPU",
+      "Triton",
+      "kimi",
+      "DeepSeek",
+      "latius buster",
+      "Minimax",
+      "Mamba 1",
+      "Mamba 2",
+      "Flex FFT",
+      "xstm",
+      "Flash Tension",
+      "flash linear tension",
+      "Ninealtension",
+      "MambaTool",
+      "Minimax01",
+      "softmax attention",
+      "ANN",
+      "SPAXThansion",
+      "Samba",
+      "Bomba",
+      "装吧",
+      "千问",
+      "Pathetension",
+      "MiniMask",
+      "Ninja Tansen",
+      "Sbus Tansen"
+    ],
+    "papers": [
+      "Dynamic Sparse Attention",
+      "Lative Sparse Attention",
+      "Kimi 1.5",
+      "Big Bird",
+      "Attention Is All You Need",
+      "Quest",
+      "Flash Attention",
+      "Kimi",
+      "DeepSeek V3",
+      "DivSQT",
+      "Lattice Block Attention",
+      "DeepSeek",
+      "MiniMax",
+      "Latinyal tension",
+      "SoMass tension",
+      "最新的线性助力模型文章",
+      "xstm工作",
+      "Flex FFT论文",
+      "Minimax01文章",
+      "MambaTool论文",
+      "Latius Buster Tension"
+    ],
+    "concepts": [
+      "动态稀疏注意力",
+      "静态稀疏注意力",
+      "线性注意力",
+      "self-attention",
+      "test-time scaling",
+      "prefilling",
+      "query-key-value",
+      "attention score",
+      "Transformer",
+      "Lative Sparse Attention",
+      "Group Query Attention (GQA)",
+      "Multi-Head Attention (MHA)",
+      "Sliding Window Attention",
+      "Blocking机制",
+      "门控机制",
+      "Top-N块选择",
+      "KV缓存共享",
+      "Flash Attention Memory Hierarchy",
+      "Attention Sync",
+      "Flash Attention",
+      "Sparse Attention",
+      "GQA (Grouped Query Attention)",
+      "Bashify Matrix Multiplication",
+      "Tensor Core",
+      "KVCACHE",
+      "Dynamic Sparsity",
+      "Train from Scratch",
+      "Inference Efficiency",
+      "Memory Wall",
+      "block selection",
+      "compression branch",
+      "query aware diamonds fashion attention",
+      "hardware efficiency",
+      "dynamic sparse attention",
+      "block size",
+      "overhide",
+      "compress attention",
+      "global attention",
+      "hybrid attention",
+      "training signal",
+      "sft",
+      "硬件暴力美学",
+      "软硬件协同设计",
+      "矩阵乘法",
+      "block by block访问模式",
+      "混合注意力架构",
+      "Machry Spirits Heating State",
+      "状态扩展（State Expansion）",
+      "Ultra Product",
+      "矩阵惩罚",
+      "chunkwise训练",
+      "savocetil模型",
+      "线性助力模型",
+      "batchify操作",
+      "窗外算法",
+      "selectivity",
+      "data dependent decay",
+      "sequence parallelism",
+      "pipeline并行",
+      "scaling law",
+      "compression in ANN",
+      "retriever task",
+      "erthansion层",
+      "KV缓存",
+      "Testine Skeling",
+      "Training Skeling",
+      "架构创新",
+      "开源",
+      "技术影响力",
+      "Position Encoding",
+      "Rope",
+      "Contextual Rise Position Encoding",
+      "Hybrid Models",
+      "长卷机",
+      "Dynamics Pathetension",
+      "Fulletension",
+      "Lost Curve"
+    ]
+  },
+  "open_questions": [
+    {
+      "question": "如何平衡动态稀疏注意力的灵活性与硬件访问效率，以实现预训练与推理的整体优化？",
+      "why_it_matters": "动态稀疏注意力虽效率高但实现复杂，需要软硬件协同设计来最大化性能提升",
+      "timestamp": "[15:44-21:44]",
+      "motif": "硬件与算法协同优化",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "question": "MiniMax的混合线性与稀疏注意力方案在不同任务上性能权衡如何？是否存在信息捕获的损失风险？",
+      "why_it_matters": "理解混合模型的优势与局限，可指导后续模型设计策略",
+      "timestamp": "[5:07-5:31]",
+      "motif": "效率与性能权衡",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "question": "为什么许多大模型公司不愿意冒险做架构创新，而选择依赖数据和已有模型？",
+      "why_it_matters": "揭示产业创新障碍，有助于科研和产品战略调整",
+      "timestamp": "[0:44-1:06]",
+      "motif": "技术创新动力",
+      "chunk_id": "BV1ZmAQekEMc_c001"
+    },
+    {
+      "question": "如何设计门控机制以动态平衡多分支稀疏注意力的贡献，以兼顾模型性能和硬件效率？",
+      "why_it_matters": "有效门控可提升模型灵活性和硬件适应性，减少人工经验依赖",
+      "timestamp": "[22:44-28:43]",
+      "motif": "动态模型架构优化",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "question": "在组内Key-Value缓存共享的前提下，如何保证多头注意力的表达能力不被显著削弱？",
+      "why_it_matters": "共享减少成本但可能影响性能，找到平衡对模型和硬件优化关键",
+      "timestamp": "[31:20-39:05]",
+      "motif": "计算资源与模型性能权衡",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "question": "Flash Attention的Blocking设计如何适配不同硬件架构，特别是带宽和缓存大小差异较大的场景？",
+      "why_it_matters": "适应性设计影响算法普适性能和实际部署效果",
+      "timestamp": "[39:26-44:22]",
+      "motif": "硬件感知算法设计",
+      "chunk_id": "BV1ZmAQekEMc_c002"
+    },
+    {
+      "question": "如何设计稀疏注意力机制以既保证推理效率又不牺牲模型性能？",
+      "why_it_matters": "均衡性能和效率是实现稀疏注意力实际落地的关键，有助于指导硬件层与模型架构设计",
+      "timestamp": "[44:36-1:07:36]",
+      "motif": "稀疏注意力性能与效率的权衡",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "question": "多头共享KV块和扩大隐藏头维度的bashify矩阵乘法方案，在不同模型架构和硬件平台的通用性和局限性是什么？",
+      "why_it_matters": "理解技术适用范围和边界避免滥用，能够针对具体案例优化硬件利用率",
+      "timestamp": "[45:22-46:05]",
+      "motif": "硬件优化矩阵乘法策略",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "question": "训练策略如何影响稀疏注意力模型最终性能？从头训练与基于预训练权重微调的优劣如何衡量？",
+      "why_it_matters": "指导模型研发路径选择，有助于达到突破性能天花板的目标",
+      "timestamp": "[56:01-59:55]",
+      "motif": "模型训练策略",
+      "chunk_id": "BV1ZmAQekEMc_c003"
+    },
+    {
+      "question": "如何权衡注意力机制设计中的理论完美性和硬件效率，达到最佳训练和推理性能？",
+      "why_it_matters": "现实硬件约束促使模型设计必须兼顾效率和准确率，找到平衡点是提升实际应用性能的关键。",
+      "timestamp": "[1:11:32-1:16:45]",
+      "motif": "模型效率 vs 硬件约束",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "question": "动态稀疏注意力机制在预训练阶段如何优化选择策略以提升效率和泛化能力？",
+      "why_it_matters": "预训练阶段的高效动态选块策略决定后续模型性能，选择合适机制对开源和工业应用极具意义。",
+      "timestamp": "[1:19:07-1:26:16]",
+      "motif": "动态稀疏注意力预训练设计",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    },
+    {
+      "question": "反向传播信号在稀疏注意力机制中的传递瓶颈有哪些？如何通过结构设计解决？",
+      "why_it_matters": "训练信号传递质量决定训练收敛和效果，设计合理的反传通路是提升复杂注意力机制性能的基础。",
+      "timestamp": "[1:07:37-1:10:29]",
+      "motif": "训练信号传递优化",
+      "chunk_id": "BV1ZmAQekEMc_c004"
+    }
+  ],
+  "asr_caveats": [
+    {
+      "segment": "[0:44-1:06]",
+      "note": "存在人名及术语拼写不确定，例如‘DeepSig’、‘Kimi’、‘MiniMax’的中文同音词可能未完全准确识别",
+      "confidence": "medium"
+    },
+    {
+      "segment": "[1:45:18-1:46:36]",
+      "note": "‘Machry Spirits Heating State’可能为专有名词或术语误识，需外部核实具体表达",
+      "confidence": "medium"
+    },
+    {
+      "segment": "[2:05:41-2:07:56]",
+      "note": "‘Ninealtension’、‘MambaTool’等模型及工具名称有辨识风险，建议对照原文论文确认",
+      "confidence": "medium"
+    }
+  ],
+  "source": "https://www.bilibili.com/video/BV1ZmAQekEMc",
+  "published_at": "2025-02-24",
+  "duration": "156:13",
+  "is_interview": false
+}

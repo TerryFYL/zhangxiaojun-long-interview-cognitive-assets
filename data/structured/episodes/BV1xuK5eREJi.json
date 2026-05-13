@@ -1,0 +1,681 @@
+{
+  "episode_id": "BV1xuK5eREJi",
+  "bvid": "BV1xuK5eREJi",
+  "title": "逐篇讲解DeepSeek关键9篇论文及创新点——“勇敢者的游戏”",
+  "episode_type": "paper_explainer",
+  "guest": {
+    "name": "",
+    "role": "",
+    "org": ""
+  },
+  "domains": [
+    "大模型推理",
+    "强化学习",
+    "模型训练优化",
+    "混合专家模型",
+    "奖励模型设计",
+    "多任务训练",
+    "工程创新"
+  ],
+  "core_question": "DeepSeek关键9篇论文揭示了大模型推理、强化学习及训练优化的系统性创新路径及其实践经验，如何通过简化策略、技术创新和工程设计构建高效低成本大模型系统？",
+  "one_sentence_takeaway": "本集详解DeepSeek团队从模型架构、训练调度、强化学习奖励机制到推理优化等多维度的创新突破，强调效率驱动的技术路线和科研文化对大规模模型研发、产品部署及投资判断的重要指导价值。",
+  "terry_relevance": [
+    "为AI科研军团提供系统化的设计与优化思路，包括低激活参数的Mixture of Experts模型设计、Multi-State Nanerator动态训练调度、以及基于规则的训练激励体系，提升模型训练和推理效率。",
+    "指导产品判断中的性能与成本权衡，如使用共享专家和多头潜在注意力机制降低部署成本，采用multi-token预测提升生成速度，有助于构建性价比优良的AI产品。",
+    "支持投资观察层面，评估创新团队的科研文化、风险承受能力及工程化创新的实际价值，识别非盲目跟风的技术路线和持续创新能力较强的团队。",
+    "为知识系统建设注入科学严谨的思考方式，包含过程间监督、自动标签生成及奖励模型设计的精细划分，以及强化学习训练中线上离线策略的权衡，有助于打造更有效的AI研发知识库。"
+  ],
+  "high_value_segments": [
+    {
+      "timestamp": "[0:35-1:10]",
+      "topic": "DeepSeek的创新文化与技术路径",
+      "why_it_matters": "体现DeepSeek在推理及大模型领域的创新不是盲目跟随，而是聚焦于提高效率和压低成本，表明其技术路线的独到和差异化。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "timestamp": "[4:45-6:07]",
+      "topic": "强化学习中的简单规则胜出复杂奖励模型",
+      "why_it_matters": "揭示了在大模型强化学习中，基于简单规则的R1方案效果优于复杂奖励模型，挑战了传统依赖奖励模型的强化学习做法。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "timestamp": "[8:00-13:20]",
+      "topic": "换方与DeepSeek的合作背景及开源学术风格",
+      "why_it_matters": "介绍换方如何通过超算资源支持科研，且DeepSeek团队保持高度开放和学术风格，体现其与大厂不同的低调务实发展策略。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "timestamp": "[16:10-17:25]",
+      "topic": "DeepSeek团队的研发氛围与风格",
+      "why_it_matters": "理解DeepSeek采取的低压且勇敢投入创新的团队文化，有助于判断其长期研发潜力和行业独特性。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "timestamp": "[17:32-18:51]",
+      "topic": "DeepSeek主要论文路线与技术发展方向",
+      "why_it_matters": "通过系统讲解其基础模型（LLM、moe、v2、v3）及推理相关论文，揭示DeepSeek技术的演进路径和核心关注点，为研究及应用选择提供参考。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "timestamp": "[23:18-27:25]",
+      "topic": "DeepSeek在训练调度（Multi-State Nanerator schedule）与超参数调节的创新",
+      "why_it_matters": "揭示DeepSeek在训练效率和资源利用上科学严谨的改进，这对大模型训练成本控制及性能优化有重要价值。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "timestamp": "[28:22-29:22]",
+      "topic": "Skilling Law及其外推作用",
+      "why_it_matters": "Skilling Law展示了训练算力、模型参数规模和数据规模之间的幂律关系，可帮助用有限小模型实验数据预测大模型的最优超参数配置，节省算力和时间成本。",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "timestamp": "[30:40-32:10]",
+      "topic": "divsec论文对Skilling Law的修正和建模精细化",
+      "why_it_matters": "divsec提出了新的算力估计公式，考虑conceptual overhead等未被前人充分考虑的因素，使得对最优配置的预测更精确，展示了更严谨细致的研究态度。",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "timestamp": "[36:07-37:19]",
+      "topic": "数据质量对最优配置的重要影响",
+      "why_it_matters": "divsec分析认为数据质量高低影响模型和数据规模的配置关系，表明最优配置不仅取决于资源总量，更与数据质量密切相关，提出此前这一点被低估。",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "timestamp": "[40:34-41:20]",
+      "topic": "刷榜现象与DeepSeek的诚实科学态度",
+      "why_it_matters": "揭示行业内普遍存在的刷榜行为及其弊端，DeepSeek不同于其他公司敢于公开刷榜影响，科学地做对照实验，提升行业透明度，对客观评价大模型性能非常重要。",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "timestamp": "[46:00-50:20]",
+      "topic": "混合专家模型（MoE）与密集模型区别及其优势",
+      "why_it_matters": "MoE通过激活少部分专家，实现了模型规模极大化同时推理成本极大降低，这对构建大规模、高效能模型的策略具有重要启示意义，为优化训练及推理资源分配提供理论支撑。",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "timestamp": "[50:20-53:26]",
+      "topic": "DeepSeek后续基于MoE的探索与发展",
+      "why_it_matters": "DeepSeek将MoE应用于更大规模模型研发，展示从小规模试验到更大规模扩展的研究路径，体现持续技术迭代的科学研究流程。",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "DeepSeek从一开始的技术探索基于提升效率而非创新而创新。",
+      "speaker": "unknown",
+      "topic": "技术创新策略",
+      "timestamp": "[0:35-1:10]",
+      "confidence": "high",
+      "terry_relevance": "帮助Terry判断团队创新是否聚焦实际效用和成本优化，避免盲目跟风。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "claim": "强化学习中基于简单规则的返馈效果优于复杂奖励模型。",
+      "speaker": "何俊贤",
+      "topic": "大模型强化学习",
+      "timestamp": "[4:45-6:07]",
+      "confidence": "high",
+      "terry_relevance": "为Terry科研和产品优化提供简化模型设计的策略启示。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "claim": "DeepSeek团队具备学术实验室般的开放影响力和低调的发展风格。",
+      "speaker": "unknown",
+      "topic": "团队文化与经营策略",
+      "timestamp": "[14:30-16:10]",
+      "confidence": "high",
+      "terry_relevance": "引导Terry思考科研团队文化建设和宣传节奏的平衡。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "claim": "DeepSeek团队能够承担高风险的技术创新，这在许多其他团队中是不可想象的。",
+      "speaker": "unknown",
+      "topic": "团队文化与创新风险",
+      "timestamp": "[16:30-16:50]",
+      "confidence": "high",
+      "terry_relevance": "为Terry判断创新型团队风险承受能力及推动长期基础研究提供案例分析。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "claim": "DeepSeek的基础模型从仿照Meta的Lamda开始，后续通过提高数据质量和调整训练策略，性能超过了Lamda 70B模型。",
+      "speaker": "unknown",
+      "topic": "模型发展及性能对比",
+      "timestamp": "[21:12-22:25]",
+      "confidence": "high",
+      "terry_relevance": "参考DeepSeek从模仿到创新的路径，指导产品和投资中对模型演进理解和评估。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "claim": "DeepSeek在训练过程中采用了多状态的Nanerator调度（Multi-State Nanerator），而非固定的Cosine调度，以适应动态变化的数据量和训练特点。",
+      "speaker": "unknown",
+      "topic": "训练调度方法创新",
+      "timestamp": "[23:18-24:38]",
+      "confidence": "high",
+      "terry_relevance": "为设计大规模模型训练方案、超参调优提供参考经验和模型。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "claim": "Skilling Law可通过少量小模型训练点，外推大规模模型的最优参数和数据规模配置",
+      "speaker": "unknown",
+      "topic": "模型训练及配置优化",
+      "timestamp": "[28:22-29:22]",
+      "confidence": "high",
+      "terry_relevance": "为Terry的AI科研军团提供依据以小试验预测大模型配置，提升研发效率和资源利用率",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "claim": "divsec对之前skilling law的粗糙估计进行了精细化修正，引入了conceptual overhead来提升预测精度",
+      "speaker": "unknown",
+      "topic": "模型算力估计模型完善",
+      "timestamp": "[30:40-32:10]",
+      "confidence": "high",
+      "terry_relevance": "帮助Terry理解和改进算力估计和训练配置的理论模型，避免粗糙经验的误用",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "claim": "数据质量的差异会显著影响最优的模型规模和数据量的配置，之前研究对此关注不足",
+      "speaker": "unknown",
+      "topic": "数据质量对模型训练影响",
+      "timestamp": "[36:07-37:19]",
+      "confidence": "high",
+      "terry_relevance": "提示Terry在AI产品和科研中重视数据质量作为调优关键因素，提高模型效果和效率",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "claim": "行业普遍存在刷榜行为，但DeepSeek公开承认并科学分析刷榜的影响，且其发布的基础模型没有刷榜行为",
+      "speaker": "unknown",
+      "topic": "刷榜行为与行业透明度",
+      "timestamp": "[40:34-44:20]",
+      "confidence": "high",
+      "terry_relevance": "为AI产品评估和模型性能验证设计更科学的benchmark和方法",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "claim": "混合专家模型（MoE）能有效降低推理时的计算成本，因为每个输入只激活少数专家参数",
+      "speaker": "unknown",
+      "topic": "模型架构与推理效率优化",
+      "timestamp": "[46:00-50:20]",
+      "confidence": "high",
+      "terry_relevance": "优化大模型部署成本和计算资源分配策略",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "claim": "DeepSeek早期的MoE相关论文更多是算法和策略的研究，而非完全成熟的模型产品，后续版本如V2继续深化研究",
+      "speaker": "unknown",
+      "topic": "科研迭代和产品开发",
+      "timestamp": "[51:15-52:55]",
+      "confidence": "high",
+      "terry_relevance": "指导科研项目和产品推动的渐进式发展流程",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    }
+  ],
+  "mental_models": [
+    {
+      "name": "效率导向创新模型",
+      "definition": "创新应以提升效率和降低成本为核心驱动力，而非盲目追求创新本身。",
+      "source_observation": "DeepSeek早期探索专家模型和方法，核心目的是压低成本和提升效率。",
+      "timestamp": "[0:35-1:10]",
+      "where_it_applies": [
+        "AI模型迭代优化",
+        "产品开发决策",
+        "科研资源分配"
+      ],
+      "where_it_fails": "可能在需要突破性创新时，过度保守导致缺乏前瞻性探索。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "name": "简单规则强化学习优越性",
+      "definition": "在大模型强化学习中，基于场景的简单规则反馈机制效果优于复杂奖励模型，提高收敛速度和效果。",
+      "source_observation": "团队尝试复杂奖励模型效果差，最终基于正确与否判定的简单规则反馈最有效。",
+      "timestamp": "[4:45-6:07]",
+      "where_it_applies": [
+        "大规模模型训练",
+        "任务明确的强化学习场景"
+      ],
+      "where_it_fails": "复杂场景或者无法直接用规则评估任务效果时，简单规则可能不适用。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "name": "Multi-State Nanerator Schedule",
+      "definition": "一种训练学习率和噪声步长调度方法，允许训练过程根据动态数据和训练情况分阶段调整，而非传统固定逐渐衰减。",
+      "source_observation": "DeepSeek基于训练动态调整Nanerator，而不固定初始训练token数，确保训练灵活且性能不受影响。[23:18-24:38]",
+      "timestamp": "[23:18-24:38]",
+      "where_it_applies": [
+        "大规模深度模型训练",
+        "动态数据量或训练条件变动明显的情境"
+      ],
+      "where_it_fails": "不适合训练数据及训练流程高度稳定、静态的场景，可能引入不必要复杂性。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "name": "Scaling Laws (超参数的Skilling Law)",
+      "definition": "基于训练模型大小、数据量与计算资源的数学关系，指导如何合理分配模型规模和算力以实现最佳训练效果。",
+      "source_observation": "DeepSeek针对算力、模型大小、数据量和超参数组合进行了严谨细致的实证研究，超越传统Scaling Law只关注模型和数据。[25:40-27:25]",
+      "timestamp": "[25:40-27:25]",
+      "where_it_applies": [
+        "大规模模型设计与训练预算规划",
+        "算力限制下的模型扩展与优化"
+      ],
+      "where_it_fails": "若训练环境或任务性质与实验条件差异大，预测效果可能偏差且误导决策。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "name": "Skilling Law",
+      "definition": "描述模型参数规模、训练数据量与计算资源之间满足特定幂律关系，允许用小规模实验外推大规模模型最优配置。",
+      "source_observation": "通过少量小模型训练点，基于参数和数据规模与算力的关系推断大模型训练配置。",
+      "timestamp": "[28:22-29:22]",
+      "where_it_applies": [
+        "大规模模型训练配置优化",
+        "有限算力资源环境的超参数调优"
+      ],
+      "where_it_fails": "数据分布极端变化或质量严重下降时预测准确度降低",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "name": "理论模型严谨态度",
+      "definition": "通过细致分析和数学公式精确建模，替代粗糙经验函数，提升训练资源估算和效果预测的准确性。",
+      "source_observation": "divsec团队不断审视并改进skilling law的公式，加入概念性开销等新因素，实现更加细致和科学的估计。",
+      "timestamp": "[30:40-32:10]",
+      "where_it_applies": [
+        "理论驱动的模型训练资源评估",
+        "科研团队系统化改进模型"
+      ],
+      "where_it_fails": "过度拘泥理论模型，忽视实际工程和环境变量",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "name": "混合专家模型（MoE）",
+      "definition": "模型由多个专家模块组成，输入数据只激活其中部分专家，从而大幅节省计算资源。",
+      "source_observation": "DeepSeek团队解释MoE架构中多个专家路由机制，以及激活部分专家实现高效推理的优势",
+      "timestamp": "[46:00-50:20]",
+      "where_it_applies": [
+        "大规模语言模型设计",
+        "计算资源有限情况下推理性能优化"
+      ],
+      "where_it_fails": "若路由机制不成熟，可能浪费计算或专家之间职责模糊，导致性能下降",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "name": "稀疏激活专家模型",
+      "definition": "通过激活模型中部分专家而非全部参数，实现计算资源节约和性能保持的平衡。",
+      "source_observation": "DeepSeek Mwe模型虽然参数多，但激活参数少，推理成本明显降低。",
+      "timestamp": "[53:26-54:47]",
+      "where_it_applies": [
+        "深度学习模型推理加速",
+        "大模型效能优化"
+      ],
+      "where_it_fails": "如果激活专家选择不当或数量不足，可能导致性能下降。",
+      "chunk_id": "BV1xuK5eREJi_c005"
+    }
+  ],
+  "decision_rules": [
+    {
+      "rule": "当强化学习任务可以用明确规则直接判定时，优先采用基于规则的奖励方案而非复杂奖励模型。",
+      "scope": "大模型强化学习，任务有明确判定标准时",
+      "anti_pattern": "盲目使用奖励模型导致收敛困难或效果不佳",
+      "timestamp": "[4:45-6:07]",
+      "source_reasoning": "团队多次尝试复杂奖励模型均效果不佳，最终基于规则反馈的方案效果最佳。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "rule": "在AI研发中，应避免盲目跟从行业大厂的现有实践，需根据自身实际资源和策略进行创新调整。",
+      "scope": "AI团队技术路线选择及产品研发",
+      "anti_pattern": "唯大厂路线而行，忽视自身团队优势和目标",
+      "timestamp": "[0:35-1:10]",
+      "source_reasoning": "DeepSeek从早期不盲目跟随权威方法，而是进行了差异化的探索和效率优先的创新。",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "rule": "当训练数据量和训练条件可能动态变化时，应该采用Multi-State Nanerator Schedule来灵活调整训练参数，避免固定调度带来的效率损失。",
+      "scope": "大规模、动态训练数据环境下的Transformer模型训练",
+      "anti_pattern": "固定使用传统Cosine调度，无视训练数据和条件的实时变化",
+      "timestamp": "[23:18-24:38]",
+      "source_reasoning": "传统调度要求事先固定训练长度，不适应动态数据扩展，Multi-State设计提供了更灵活且性能无损的训练调度。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "rule": "评估大模型训练资源和超参数配置时，应结合多维度Scaling Law进行系统分析，而非仅盲目复制已有模型的超参数设置。",
+      "scope": "大模型训练设计及优化",
+      "anti_pattern": "直接套用他人模型的训练超参数，不结合算力和数据规模调整",
+      "timestamp": "[25:40-27:25]",
+      "source_reasoning": "DeepSeek通过详实研究表明，合理的超参数和算力配比对训练效果至关重要，盲目复制可能效率和效果低下。",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "rule": "当算力资源有限时，应首先通过小规模模型实验确定最佳配置并外推，而不是直接训练大模型多次。",
+      "scope": "大规模模型训练计划的初期配置估计",
+      "anti_pattern": "直接用大量算力盲目训练大模型，多次试错浪费资源",
+      "timestamp": "[28:22-29:22]",
+      "source_reasoning": "skilling law支持用少量小模型实验预测大模型配置，节省时间和资源。",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "rule": "在模型与数据配置的最优方案设计中，应同时充分考虑数据质量，而非单纯依赖资源总量。",
+      "scope": "模型和数据规模配置的策略选择",
+      "anti_pattern": "忽略数据质量差异，只根据算力和参数规模调整，导致效果次优",
+      "timestamp": "[36:07-37:19]",
+      "source_reasoning": "divsec提出数据质量显著影响最优配置，这是先前研究不足的点。",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    }
+  ],
+  "entities": {
+    "people": [
+      "何俊贤",
+      "潘家仪",
+      "张小军",
+      "甄婷"
+    ],
+    "orgs": [
+      "DeepSeek",
+      "换方",
+      "OpenAI",
+      "香港科技大学",
+      "加州大学博克利分校",
+      "Meta",
+      "Lama 2",
+      "Skywork",
+      "Google",
+      "DeepSake",
+      "vtuber",
+      "Mixed-Tro",
+      "DeepSig",
+      "OpenIDoN",
+      "dipsec",
+      "DeafSig",
+      "Deep City",
+      "AdvSec"
+    ],
+    "products": [
+      "DeepSick R1-0",
+      "DeepSick R1",
+      "KIMI K1.5",
+      "OpenEye O1",
+      "Lamda",
+      "DeepSeek V2",
+      "GPT-3.5",
+      "GPT-4",
+      "LoRA",
+      "DeepSeek M1",
+      "DPC V2",
+      "DPC V3",
+      "Mixed-Tro 1.5",
+      "Lama3",
+      "千问1.5",
+      "DeepSeek V3",
+      "DeepSigCoder",
+      "DeepSigCoder v2",
+      "CoderLama",
+      "StarCoder",
+      "DBC coder v2",
+      "DeepSeek a math 7B",
+      "DeepSeek coder base v1.5",
+      "DeepSeek Prover",
+      "DBCC Prover V1.5",
+      "Deepseq Prover V1.5",
+      "R1",
+      "Zero",
+      "Lin",
+      "G2PO",
+      "MCTS",
+      "RMax TS",
+      "AIME",
+      "Litcoder",
+      "Deepseq Coder V2",
+      "Depth SqaR1",
+      "V3"
+    ],
+    "papers": [
+      "DeepSick LLM paper",
+      "OpenAI reward model paper",
+      "DeepSeek LLM",
+      "DeepSeek MoE",
+      "DeepSeek v2",
+      "DeepSeek v3",
+      "DeepSeek Coder",
+      "DeepSeek Mass",
+      "DeepSeek Prover",
+      "divsec",
+      "Scolino",
+      "DeepSeek刷榜对照实验paper",
+      "Skywork的刷榜对照实验paper",
+      "DeepSeek MoE算法研究paper",
+      "DeepSick V3",
+      "DeepSick Mwe",
+      "divc paper",
+      "vsendpaper",
+      "DeepSeek M1 paper",
+      "DPC V2 paper",
+      "DeepSeek第一篇paper",
+      "Llama 2",
+      "DeepSeek V2 Paper",
+      "DeepSig V2",
+      "DeepSig V3",
+      "MTPC paper",
+      "Lama3",
+      "DeepSigCoder",
+      "DeepSigCoder V1.5",
+      "Nama3",
+      "Mass Shifter",
+      "OpenIDoN paper – Let's Verify Step By Step",
+      "Mass Shiford",
+      "DeepSeek a mass",
+      "JRPIO",
+      "dipsec221",
+      "mess",
+      "messageford",
+      "DeepSeek Mass paper",
+      "DeepSeek Prover V1.5",
+      "Depth SqaR1 Paper",
+      "DPC"
+    ],
+    "concepts": [
+      "大模型推理",
+      "强化学习",
+      "奖励模型",
+      "规则导向强化学习",
+      "算力调度系统",
+      "弹幕型大模型",
+      "Multi-State Nanerator Schedule",
+      "Scaling Laws",
+      "超参数调节",
+      "训练调度",
+      "算力预测",
+      "Skilling Law",
+      "conceptual overhead",
+      "flops",
+      "数据质量影响最优配置",
+      "刷榜（bench boosting）",
+      "混合专家模型（Mixture of Experts, MoE）",
+      "密集模型（Dense model）",
+      "激活参数",
+      "对照实验",
+      "模型推理成本",
+      "Mixture of Experts (MoE)",
+      "共享专家",
+      "专家细分",
+      "稀疏激活",
+      "Mixture of Experts",
+      "共享专家 (Shared Expert)",
+      "专有专家 (Routed Expert)",
+      "Multi-head Latent Attention",
+      "kvcash缓存机制",
+      "Multi-Head Attention",
+      "Grufful Query Attention (GQA)",
+      "Multiquery Attention (MQA)",
+      "MultiHead Latent Attention (MLA)",
+      "KV缓存 (KV cache)",
+      "低秩压缩 (Low rank compression)",
+      "位置编码 (RoPE Reposition Embedding)",
+      "混合专家模型 (Mixture of Experts)",
+      "最大似然估计训练 (MLE training)",
+      "混合专家模型 (MoE)",
+      "专家平衡 (Expert Balance)",
+      "设备平衡 (Device Balance)",
+      "激活参数 (Activated Parameters)",
+      "多头注意力机制 (Multi-head Attention)",
+      "部署成本优化",
+      "分布式训练",
+      "multi-token prediction loss",
+      "loss free balance",
+      "多专家模型",
+      "多头影视注意力机制",
+      "多Token预测（MTPC）",
+      "FP8混合精度训练",
+      "speculative decoding",
+      "MoE（专家模型）",
+      "规则奖励模型",
+      "持续预训练(Continual Pretraining)",
+      "刷榜优化",
+      "后训练(SFTs)",
+      "Reward model",
+      "Unit test feedback",
+      "Rule-based feedback",
+      "Process inter-multiple reward model",
+      "过程间监督模型",
+      "自动标签生成",
+      "测试时采样多结果筛选",
+      "强化学习 JRPIO",
+      "过程监督奖励模型",
+      "降本增效",
+      "policy model",
+      "value model",
+      "g2pio",
+      "online强化学习",
+      "offline强化学习",
+      "process-based reward model",
+      "outcome-based reward model",
+      "RFT（Rejection Fine-Tuning）",
+      "SFT（Supervised Fine-Tuning）",
+      "pass@k指标",
+      "在线训练代码库",
+      "强化学习2U",
+      "规则奖励",
+      "奖励稀疏问题",
+      "定理证明",
+      "形式化定理证明",
+      "讲定模型 (constraint model)",
+      "稀疏奖励",
+      "自我提升",
+      "Zero强化学习",
+      "SFT (监督微调)",
+      "MCTS (蒙特卡洛树搜索)",
+      "MCTS",
+      "思维链",
+      "规则驱动",
+      "推理路径",
+      "长推理训练",
+      "模型意识",
+      "Jarpeau",
+      "MLA",
+      "GRPO",
+      "Multitoken Prediction",
+      "人类反馈强化学习",
+      "PPO",
+      "DPO",
+      "迭代式自我进化",
+      "拒绝采样SFT",
+      "在线训练",
+      "自我进化"
+    ]
+  },
+  "open_questions": [
+    {
+      "question": "为何在大模型强化学习中，基于简单规则的方案优于复杂奖励模型？",
+      "why_it_matters": "揭示核心机制帮助优化大模型训练策略，节省资源，提高效果。",
+      "timestamp": "[4:45-6:07]",
+      "motif": "强化学习优化",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "question": "DeepSeek开源与学术风格的坚持如何影响其在全球AI界的影响力？",
+      "why_it_matters": "理解科研开放与行业竞争之间的平衡及其对品牌建设的影响。",
+      "timestamp": "[8:00-13:20]",
+      "motif": "科研文化和宣传策略",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "question": "换方作为量化公司，如何成功构建并运营高效算力资源支持AI研发？",
+      "why_it_matters": "为科研/产品团队的算力资源管理提供可借鉴经验。",
+      "timestamp": "[8:00-13:20]",
+      "motif": "算力基础设施",
+      "chunk_id": "BV1xuK5eREJi_c001"
+    },
+    {
+      "question": "DeepSeek低压的团队文化如何影响其长期创新能力和研发产出？",
+      "why_it_matters": "理解团队文化对科研效率及创新风险承担的作用，有助于判别不同研究组织的潜力。",
+      "timestamp": "[16:10-17:25]",
+      "motif": "团队文化与创新管理",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "question": "Multi-State Nanerator Schedule相较于传统Cosine调度的实际性能提升体现在哪些方面？",
+      "why_it_matters": "探明训练调度改进如何降低大模型训练成本，提高效率，对训练系统设计至关重要。",
+      "timestamp": "[23:18-24:38]",
+      "motif": "大模型训练效率优化",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "question": "如何将DeepSeek在超参数和算力的scaling law研究经验应用于其他大规模模型的训练设计？",
+      "why_it_matters": "推广有效的训练资源配置方法，帮助团队降低试错成本，提升训练效果。",
+      "timestamp": "[25:40-27:25]",
+      "motif": "训练资源优化",
+      "chunk_id": "BV1xuK5eREJi_c002"
+    },
+    {
+      "question": "如何更准确地将小规模模型的表现外推到大规模模型训练中？",
+      "why_it_matters": "精准外推能节省大量训练资源和时间，提高训练效率和模型效果。",
+      "timestamp": "[28:22-29:22]",
+      "motif": "大规模模型训练优化",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "question": "现有skilling law模型中哪些因素被忽视了？怎样进一步修正与完善？",
+      "why_it_matters": "改进估计模型有助于更科学合理配置训练算力和模型规模，避免浪费。",
+      "timestamp": "[30:40-32:10]",
+      "motif": "训练资源估算理论进展",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "question": "数据质量如何定量影响训练中最优的模型与数据规模配置？",
+      "why_it_matters": "理解和衡量数据质量的影响，对于设计高效的训练方案和提升模型效果至关重要。",
+      "timestamp": "[36:07-37:19]",
+      "motif": "训练数据质量影响",
+      "chunk_id": "BV1xuK5eREJi_c003"
+    },
+    {
+      "question": "如何构建更加科学透明的模型评测体系以杜绝刷榜行为？",
+      "why_it_matters": "提高行业整体模型排名的可信度，防止通过非模型实性能刷榜误导用户和投资者",
+      "timestamp": "[40:34-41:20]",
+      "motif": "模型评测和行业透明度",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "question": "混合专家模型在实际应用中如何设计路由机制以最大化专家利用率？",
+      "why_it_matters": "优秀的路由机制是发挥MoE性能和成本优势的关键，决定模型预测效率和准确性",
+      "timestamp": "[46:00-50:20]",
+      "motif": "模型架构设计",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    },
+    {
+      "question": "在大模型研发中，如何平衡实验研究与产品化推进的节奏？",
+      "why_it_matters": "合理平衡科研探索与产品实现有助于持续创新和商业竞争力提升",
+      "timestamp": "[51:15-52:55]",
+      "motif": "科研与产品管理",
+      "chunk_id": "BV1xuK5eREJi_c004"
+    }
+  ],
+  "asr_caveats": [
+    {
+      "field": "人名与术语",
+      "confidence": "medium"
+    },
+    {
+      "field": "句义与断句",
+      "confidence": "medium"
+    }
+  ],
+  "source": "https://www.bilibili.com/video/BV1xuK5eREJi",
+  "published_at": "2025-02-12",
+  "duration": "200:54",
+  "is_interview": false
+}

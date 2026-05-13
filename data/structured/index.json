@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-05-13T11:20:26",
+  "episode_count": 26,
+  "raw_transcripts_included": false,
+  "removed_fields": [
+    "_meta",
+    "evidence",
+    "evidence_note",
+    "quote_status",
+    "raw_text",
+    "segments",
+    "source_path",
+    "transcript",
+    "writing_material"
+  ],
+  "episodes": [
+    {
+      "bvid": "BV13AmpBiE2o",
+      "title": "对投资人朱啸虎的第三次访谈：现实主义、AI的盛筵与泡泡、和共识错开15度、《王者荣耀》",
+      "source": "https://www.bilibili.com/video/BV13AmpBiE2o",
+      "episode_type": "interview",
+      "guest": {
+        "name": "朱啸虎",
+        "role": "投资人",
+        "org": ""
+      },
+      "one_sentence_takeaway": "朱啸虎基于对AI技术进展、市场情绪、基础设施瓶颈和投资布局的深刻洞察，提倡错开共识赛道15度，聚焦超级APP入口和垂直场景，加速布局差异化投资与产品战略，积极防范泡沫风险，展望中国AI生态将在未来10年全面领先美国。"
+    },
+    {
+      "bvid": "BV13BdfBoELd",
+      "title": "对洪乐潼的4小时访谈：AI for Math、把数学变成Lean、数学天书中的证明、直觉、被创造的与被发现的",
+      "source": "https://www.bilibili.com/video/BV13BdfBoELd",
+      "episode_type": "interview",
+      "guest": {
+        "name": "洪乐潼",
+        "role": "数学家、创业者",
+        "org": "Action"
+      },
+      "one_sentence_takeaway": "洪乐潼通过深入探讨数学本质、AI辅助数学证明的技术路径、跨学科团队建设与创业实践，揭示了数字时代数学研究的范式变革及AI与人类数学家的协同未来。"
+    },
+    {
+      "bvid": "BV17sNEz2ER8",
+      "title": "人类驯服可控核聚变还有多少路程？对能量奇点创始人杨钊3小时访谈",
+      "source": "https://www.bilibili.com/video/BV17sNEz2ER8",
+      "episode_type": "interview",
+      "guest": {
+        "name": "杨钊",
+        "role": "创始人",
+        "org": "能量奇点"
+      },
+      "one_sentence_takeaway": "可控核聚变是人类文明面临的极其复杂但极具变革潜力的技术挑战，依托托卡马克技术和高温超导材料实现工程突破，以创业公司推动商业化并深度借助AI优化研发效率，最终需突破成本拐点实现能源自由与文明跃迁。"
+    },
+    {
+      "bvid": "BV1F1GHzLE2k",
+      "title": "余凯口述30年史：世界不止刀光剑影，是一部人来人往的江湖故事",
+      "source": "https://www.bilibili.com/video/BV1F1GHzLE2k",
+      "episode_type": "interview",
+      "guest": {
+        "name": "余凯",
+        "role": "AI创业者与科学家",
+        "org": "地平线 (Horizon Robotics)"
+      },
+      "one_sentence_takeaway": "余凯用第一性原理指导技术创新，强调以客户同理心和差异化为核心，引入战略聚焦和软硬结合推动AI产品落地，在促进人才与资本高效配置的同时，坚定理想主义使命，推进科技文明进步。"
+    },
+    {
+      "bvid": "BV1Kt68YBEzq",
+      "title": "【李想2024唯一深度对谈（纯享版）】张小珺对话李想",
+      "source": "https://www.bilibili.com/video/BV1Kt68YBEzq",
+      "episode_type": "interview",
+      "guest": {
+        "name": "李想",
+        "role": "CEO",
+        "org": "理想汽车"
+      },
+      "one_sentence_takeaway": "李想分享了理想汽车通过软硬件深度融合、自研大模型、端到端数据与自动驾驶技术，以及基于家庭场景的AI产品战略，实现汽车行业智能化下半场的跃迁与长远企业愿景。"
+    },
+    {
+      "bvid": "BV1N2uXzNEBa",
+      "title": "Lovart创始人陈冕复盘应用创业这两年：这一刻就是好爽啊！！哈哈哈哈哈",
+      "source": "https://www.bilibili.com/video/BV1N2uXzNEBa",
+      "episode_type": "founder_story",
+      "guest": {
+        "name": "陈冕",
+        "role": "Lovart创始人",
+        "org": "Lovart"
+      },
+      "one_sentence_takeaway": "创业成功依赖于对市场节奏的精准把控、匹配自身优势的业务选择、差异化的AI应用定位以及对AI生态和团队组织的深刻认知，合理管理创业焦虑和融资节奏是关键。"
+    },
+    {
+      "bvid": "BV1N7oBYNEoU",
+      "title": "Manus全球爆火，我们独家对话Manus创始人肖弘！",
+      "source": "https://www.bilibili.com/video/BV1N7oBYNEoU",
+      "episode_type": "interview",
+      "guest": {
+        "name": "肖弘",
+        "role": "创始人",
+        "org": "Manus"
+      },
+      "one_sentence_takeaway": "肖弘强调AI产品需要通过异步多步骤Agent交互设计匹配模型能力，以适应复杂任务和真实沟通节奏，同时创业者需保持激进策略与灵活博弈思维，在全球化背景下把握技术红利和市场竞争。"
+    },
+    {
+      "bvid": "BV1PDKozTEZJ",
+      "title": "95年，离职字节和Kimi，Agent创业：“融资风生水起，我如履薄冰”",
+      "source": "https://www.bilibili.com/video/BV1PDKozTEZJ",
+      "episode_type": "founder_story",
+      "guest": {
+        "name": "名超评",
+        "role": "创业者",
+        "org": "Kimi"
+      },
+      "one_sentence_takeaway": "本集访谈深度剖析了AI创业中的认知模型、产品设计原则、团队和融资心态管理、智能Agent生态的设计与网络效应，以及顺势而为的重要性，为AI科研军团、产品决策和投资策略提供多维度实操框架和思考路径。"
+    },
+    {
+      "bvid": "BV1WLgQz8Enk",
+      "title": "机器人泡沫了吗？和10亿美金创始人聊：资本轰炸下的具身智能真相",
+      "source": "https://www.bilibili.com/video/BV1WLgQz8Enk",
+      "episode_type": "interview",
+      "guest": {
+        "name": "王赫",
+        "role": "机器人与具身智能领域专家",
+        "org": ""
+      },
+      "one_sentence_takeaway": "具身智能依赖物理交互和多学科融合，由大模型指挥小模型执行，机器人商业化需聚焦核心可复制技能，采用成熟硬件，并通过真实数据与合成数据结合减少训练成本；产业规模化和真实生产力展示是防范泡沫的关键。"
+    },
+    {
+      "bvid": "BV1YR5E6EE9o",
+      "title": "对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去",
+      "source": "https://www.bilibili.com/video/BV1YR5E6EE9o",
+      "episode_type": "interview",
+      "guest": {
+        "name": "姚顺宇",
+        "role": "AI科研从业者，前Anthropic强化学习团队成员",
+        "org": "Anthropic"
+      },
+      "one_sentence_takeaway": "AI研发突破已从单一模型性能竞争转向系统化训练、用户体验和团队协作，强调数据驱动、科学严谨和多方制衡，同时启示科研自动化与跨学科思维的重要性。"
+    },
+    {
+      "bvid": "BV1ZczaBJE58",
+      "title": "印奇出任阶跃星辰董事长的访谈：聪明人的诱惑、取舍、超长链路残酷淘汰赛、阶跃函数和超多元方程",
+      "source": "https://www.bilibili.com/video/BV1ZczaBJE58",
+      "episode_type": "interview",
+      "guest": {
+        "name": "印奇",
+        "role": "董事长",
+        "org": "阶跃星辰"
+      },
+      "one_sentence_takeaway": "AI企业需围绕基础大模型打造差异化核心技术，聚焦软硬结合的中端应用场景，实行技术与商业双轮驱动的战略，辅以高效的多元化团队管理与长远人才培养，方能在残酷的超长链路竞争中赢得生存与发展。"
+    },
+    {
+      "bvid": "BV1ZmAQekEMc",
+      "title": "逐篇讲解DeepSeek、Kimi、MiniMax注意力机制新论文——“硬件上的暴力美学”",
+      "source": "https://www.bilibili.com/video/BV1ZmAQekEMc",
+      "episode_type": "paper_explainer",
+      "guest": {
+        "name": "杨松林",
+        "role": "注意力机制领域研究者及产业实践者",
+        "org": "DeepSig / Kimi / MiniMax"
+      },
+      "one_sentence_takeaway": "本集深入解析了动态稀疏注意力、多分支门控机制和混合线性软硬结合架构的最新论文，强调硬件暴力美学理念及算法与硬件协同优化对未来大模型性能和规模突破的关键作用。"
+    },
+    {
+      "bvid": "BV1arcjzpE1B",
+      "title": "对星海图高继扬的3小时访谈：鲶鱼、曾国藩、机器人、Waymo与Momenta的两面、一只狼与许华哲的离开",
+      "source": "https://www.bilibili.com/video/BV1arcjzpE1B",
+      "episode_type": "interview",
+      "guest": {
+        "name": "高继扬",
+        "role": "创始人",
+        "org": "星海图"
+      },
+      "one_sentence_takeaway": "机器人和AI融合的硬科技创业需要以客户价值为中心，注重深度链条协作与硬件整机建设，借助高质量真实数据和科学的研发及组织策略推动长周期创新及高效交付。"
+    },
+    {
+      "bvid": "BV1awiDBDEWS",
+      "title": "全球大模型第一股的上市访谈，和智谱CEO张鹏聊：敢问路在何方？",
+      "source": "https://www.bilibili.com/video/BV1awiDBDEWS",
+      "episode_type": "interview",
+      "guest": {
+        "name": "张鹏",
+        "role": "CEO",
+        "org": "智谱科技"
+      },
+      "one_sentence_takeaway": "智谱科技CEO张鹏系统分享了认知智能阶段的技术发展脉络、科研产学转化的政策和实务挑战、大模型设计与训练成本优化、开源促进生态建设与国际认可、以及技术与商业不可分割的双主旋律，提供从技术、商业到组织管理的全景洞察和实践经验。"
+    },
+    {
+      "bvid": "BV1cc8kzmEBs",
+      "title": "逐段讲解Kimi K2报告并对照ChatGPT Agent、Qwen3-Coder等：“系统工程的力量”",
+      "source": "https://www.bilibili.com/video/BV1cc8kzmEBs",
+      "episode_type": "interview",
+      "guest": {
+        "name": "政博员",
+        "role": "AI研究专家",
+        "org": ""
+      },
+      "one_sentence_takeaway": "本集访谈深入剖析了基于Kimi K2等先进Agent模型的系统工程实践，涵盖Agent定义、分类、训练方法、安全机制、数据生成与质量控制、多Agent体系设计、推理优化及自我提升机制，提供了构建高性能AI Agent的全面技术路径与产品设计指导。"
+    },
+    {
+      "bvid": "BV1fiybB4EDU",
+      "title": "对李想的第二次3小时访谈：CEO大模型、MoE、梁文锋、VLA、能量、记忆、对抗人性、亲密关系、人类的智慧",
+      "source": "https://www.bilibili.com/video/BV1fiybB4EDU",
+      "episode_type": "interview",
+      "guest": {
+        "name": "李想",
+        "role": "CEO",
+        "org": "理想汽车"
+      },
+      "one_sentence_takeaway": "访谈深入讨论了AI生产工具本质、多模态大模型定制、递进式自动驾驶智能训练、安全对齐与信任构建，以及围绕规模扩张的组织和团队管理策略，形成面向未来AI产业和产品演进的系统性视角。"
+    },
+    {
+      "bvid": "BV1hFe1zSEXp",
+      "title": "对话Kimi创始人杨植麟：K2、Agentic LLM、缸中之脑、艰难的泛化、用L4解决L3、长文本影响智商、“站在无限的开端”",
+      "source": "https://www.bilibili.com/video/BV1hFe1zSEXp",
+      "episode_type": "interview",
+      "guest": {
+        "name": "杨植麟",
+        "role": "Kimi创始人",
+        "org": "Kimi"
+      },
+      "one_sentence_takeaway": "通过结合“缸中之脑”和Agentic两种模型模式，强化基于猜想-验证的推理机制，提升token效率与多任务泛化能力，辅以数据驱动的技术战略和动态调整，公司可在AI大模型研发和产品生态构建中实现领先。"
+    },
+    {
+      "bvid": "BV1iVoVBgERD",
+      "title": "对罗福莉的3.5小时访谈：AI范式已然巨变！OpenClaw、智能体框架、Agent范式很吃Post-train、卡的分配比例、巨变下的组织",
+      "source": "https://www.bilibili.com/video/BV1iVoVBgERD",
+      "episode_type": "interview",
+      "guest": {
+        "name": "罗福利",
+        "role": "AI研究者与工程团队负责人",
+        "org": "OpenClaw / OpenCloud等相关项目"
+      },
+      "one_sentence_takeaway": "访谈深入探讨了智能体框架设计、多模型协同、高效训练管理及开源生态对AI范式巨变的推动作用，并强调环境、团队组织与技术敏捷性是实现AI生产力革命的关键。"
+    },
+    {
+      "bvid": "BV1knvYBDEjs",
+      "title": "Manus决定出售前最后的访谈：啊，这奇幻的2025年漂流啊…",
+      "source": "https://www.bilibili.com/video/BV1knvYBDEjs",
+      "episode_type": "interview",
+      "guest": {
+        "name": "记超（Peek）",
+        "role": "联合创始人",
+        "org": "Manus A.I"
+      },
+      "one_sentence_takeaway": "Manus团队通过统一Agent架构、合理的技术与产品策略、以用户为核心的反馈循环及注重团队身心健康构建了差异化的AI产品与创业体系，体现了面向复杂AI生态的前瞻性布局与实战经验。"
+    },
+    {
+      "bvid": "BV1pkyqBxEdB",
+      "title": "干货！开源一段论文探索之旅给大家",
+      "source": "https://www.bilibili.com/video/BV1pkyqBxEdB",
+      "episode_type": "paper_explainer",
+      "guest": {
+        "name": "谢清驰",
+        "role": "AI论文学习者与实践者",
+        "org": ""
+      },
+      "one_sentence_takeaway": "本集通过谢清驰的AI论文自学与实践历程，深度剖析了AI重要论文与技术发展脉络，涵盖数学基础、AI辅助学习工具、深度学习关键技术、Transformer与生成模型演进、模型训练工程挑战及未来趋势，为科研、产品和投资提供系统化可迁移的知识框架和实践指引。"
+    },
+    {
+      "bvid": "BV1q6RzYnENi",
+      "title": "逐篇解析机器人基座模型和VLA经典论文——“人就是最智能的VLA”",
+      "source": "https://www.bilibili.com/video/BV1q6RzYnENi",
+      "episode_type": "paper_explainer",
+      "guest": {
+        "name": "陈建宇",
+        "role": "研究员",
+        "org": "清华大学交叉信息研究院"
+      },
+      "one_sentence_takeaway": "本集详细解析了机器人视觉语言行动（VLA）基座模型的前沿架构和训练方法，强调以人类为通用VLA模型的设计灵感，通过多模态融合、联合训练和分层控制等技术推动机器人智能持续进步，兼顾科研创新与产品实用性。"
+    },
+    {
+      "bvid": "BV1sLX9B4EqD",
+      "title": "【数据的综述】和谢晨聊，新时代的石油、历史、版图、数据金字塔、定价与Recipe",
+      "source": "https://www.bilibili.com/video/BV1sLX9B4EqD",
+      "episode_type": "interview",
+      "guest": {
+        "name": "谢辰",
+        "role": "仿真数据与机器人AI专家，光轮智能创始人",
+        "org": "光轮智能"
+      },
+      "one_sentence_takeaway": "访谈系统解析了仿真数据在AI模型训练和评测中的核心地位，强调了基于反馈驱动的数据生产体系、多模态智能系统的协作生态，以及数据金字塔和评测驱动模型对推动机器人与大模型智能快速迭代的关键作用。"
+    },
+    {
+      "bvid": "BV1tew5zVEDf",
+      "title": "对谢赛宁的7小时马拉松访谈：世界模型、逃出硅谷、反OpenAI、AMI Labs、两次拒绝Ilya、杨立昆、李飞飞和42",
+      "source": "https://www.bilibili.com/video/BV1tew5zVEDf",
+      "episode_type": "interview",
+      "guest": {
+        "name": "谢赛宁",
+        "role": "AI科学家、创业者",
+        "org": "AMI Labs"
+      },
+      "one_sentence_takeaway": "谢赛宁全面探讨世界模型的理论基础、科研方法、团队与创业策略，强调从表征学习、架构设计到跨学科融合和科研文化创新，构建真正具备认知、规划和安全控制能力的智能系统是AI未来的核心方向。"
+    },
+    {
+      "bvid": "BV1vMtUzJEC7",
+      "title": "对话禾赛李一帆：你仔细想行业的机会来自哪？是国家、民族的机会",
+      "source": "https://www.bilibili.com/video/BV1vMtUzJEC7",
+      "episode_type": "interview",
+      "guest": {
+        "name": "李一帆",
+        "role": "创始人",
+        "org": "禾赛科技"
+      },
+      "one_sentence_takeaway": "硬科技创业成功依赖于深入理解国家和民族赋予的行业机遇，技术与制造融合，注重商业化反馈和客户合作共赢，结合差异化战略和长期规划，推动激光雷达及机器人等核心领域的产业升级与国际竞争力。"
+    },
+    {
+      "bvid": "BV1xuK5eREJi",
+      "title": "逐篇讲解DeepSeek关键9篇论文及创新点——“勇敢者的游戏”",
+      "source": "https://www.bilibili.com/video/BV1xuK5eREJi",
+      "episode_type": "paper_explainer",
+      "guest": {
+        "name": "",
+        "role": "",
+        "org": ""
+      },
+      "one_sentence_takeaway": "本集详解DeepSeek团队从模型架构、训练调度、强化学习奖励机制到推理优化等多维度的创新突破，强调效率驱动的技术路线和科研文化对大规模模型研发、产品部署及投资判断的重要指导价值。"
+    },
+    {
+      "bvid": "BV1zQL9z3ETw",
+      "title": "【独家对话奔驰全球CEO康林松】转型之中的139岁巨人",
+      "source": "https://www.bilibili.com/video/BV1zQL9z3ETw",
+      "episode_type": "interview",
+      "guest": {
+        "name": "康林松",
+        "role": "全球CEO",
+        "org": "奔驰"
+      },
+      "one_sentence_takeaway": "奔驰正通过全面电动化战略、基于软硬件全栈平台的智能汽车研发、以及依托中国市场的全球研发网络协同，实施史无前例的产品和技术发布计划，实现传统豪华汽车品牌的创新转型。"
+    }
+  ]
+}

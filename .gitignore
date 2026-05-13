@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv/
+venv/
+
+# Raw/private media and transcript outputs are intentionally excluded.
+data/raw/
+data/audio/
+data/video/
+data/transcripts/*
+!data/transcripts/README.md
+*.mp3
+*.mp4
+*.m4a
+*.wav
+*.srt

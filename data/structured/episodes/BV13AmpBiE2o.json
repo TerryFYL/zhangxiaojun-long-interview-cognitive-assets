@@ -1,0 +1,556 @@
+{
+  "episode_id": "BV13AmpBiE2o",
+  "bvid": "BV13AmpBiE2o",
+  "title": "对投资人朱啸虎的第三次访谈：现实主义、AI的盛筵与泡泡、和共识错开15度、《王者荣耀》",
+  "episode_type": "interview",
+  "guest": {
+    "name": "朱啸虎",
+    "role": "投资人",
+    "org": ""
+  },
+  "domains": [
+    "人工智能",
+    "投资策略",
+    "创业生态",
+    "技术基础设施",
+    "产品战略"
+  ],
+  "core_question": "如何在当前快速发展的AI产业中，通过技术和市场动态洞察，制定差异化的投资与产品策略，规避泡沫风险，抓住中国AI生态的成长机会？",
+  "one_sentence_takeaway": "朱啸虎基于对AI技术进展、市场情绪、基础设施瓶颈和投资布局的深刻洞察，提倡错开共识赛道15度，聚焦超级APP入口和垂直场景，加速布局差异化投资与产品战略，积极防范泡沫风险，展望中国AI生态将在未来10年全面领先美国。",
+  "terry_relevance": [
+    {
+      "aspect": "AI科研军团建设",
+      "value": "提供技术与资源瓶颈视角，如算力、电力、数据中心限制，有助合理规划科研重点和技术选型，避免盲目追求SOTA模型，而聚焦场景适配与效率优化。"
+    },
+    {
+      "aspect": "产品判断",
+      "value": "通过理解超级APP和日活切入的核心竞争模型，指导产品设计重视用户留存与社交关系链建设，避免过度技术驱动，强化实用性和生态建设能力。"
+    },
+    {
+      "aspect": "投资观察",
+      "value": "朱啸虎关于错开大厂视角15度避开高度共识赛道的投资策略，为Terry构建差异化投资组合提供体系化参考，提升识别潜力标的和规避泡沫风险的能力。"
+    },
+    {
+      "aspect": "知识系统建设",
+      "value": "引入‘泡沫识别反直觉模型’、‘错开共识赛道模型’及‘共识与商业化脱节风险模型’等认知框架，丰富知识体系中的投资决策模型和技术趋势判断工具。"
+    }
+  ],
+  "high_value_segments": [
+    {
+      "timestamp": "[0:00-0:20]",
+      "topic": "当前AI泡沫的判断与市场情绪",
+      "why_it_matters": "帮助Terry识别市场是否过热，防范泡沫风险，同时理解投资人的情绪操控动机。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "timestamp": "[1:00-2:04]",
+      "topic": "OpenAI战略转型和超级APP入口争夺",
+      "why_it_matters": "对Terry的产品和投资判断提供了典型案例，突出超级APP和日活（DAU）切入战略的重要性。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "timestamp": "[8:30-9:59]",
+      "topic": "算力消耗爆发与基础设施瓶颈",
+      "why_it_matters": "提示Terry关注技术发展与资源成本之间的矛盾，评估硬件、数据中心、电力对AI行业可持续发展的影响。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "timestamp": "[12:20-12:23]",
+      "topic": "数据中心和算力资源限制",
+      "why_it_matters": "算力资源是AI进步的核心瓶颈，直接影响产业发展速度和投资决策",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "timestamp": "[13:23-13:37]",
+      "topic": "OpenAI未来考验和战略评估",
+      "why_it_matters": "OpenAI是否能在C端市场站稳决定其长期竞争力和估值合理性",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "timestamp": "[20:25-21:02]",
+      "topic": "投资策略：错开共识赛道约15度",
+      "why_it_matters": "避免高度共识赛道竞争过于激烈，选择稍偏离热门方向提高投资成功率",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "timestamp": "[22:39-23:02]",
+      "topic": "中国供应链的成体系优势",
+      "why_it_matters": "成体系的供应链优势形成了竞争壁垒，使得竞争者难以复制复杂产品，体现了产业链协同的重要投资机会。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "timestamp": "[24:55-25:07]",
+      "topic": "投资策略：聚焦大厂不愿意做的垂直场景和稀化部署",
+      "why_it_matters": "避开大厂主流赛道，投资垂直细分市场和稀化部署是找到成长空间的重要策略，尤其面对大厂竞争无比激烈的现状。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "timestamp": "[31:36-31:59]",
+      "topic": "投资决策中的面谈时长与关注点",
+      "why_it_matters": "快速判断创业项目潜力的效率方式——10分钟初面筛选，30分钟深入确定兴趣，重点关注市场规模、壁垒和成功因素，体现高效投资决策流程。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "timestamp": "[33:05-33:34]",
+      "topic": "融资标准与IPO门槛",
+      "why_it_matters": "明确了消费和2B企业上市融资的实际标准，帮助创业者与投资人判断是否有融资必要，避免无效融资浪费资源。",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "timestamp": "[38:03-39:12]",
+      "topic": "市场共识与泡沫风险",
+      "why_it_matters": "分析当前VC市场过度共识可能导致泡沫，并指出商业化兑现的风险提醒投资者警惕共识和商业化脱节现象。",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "timestamp": "[41:56-42:11]",
+      "topic": "创业公司不应追求SOTA模型",
+      "why_it_matters": "提醒创业公司技术研发应以场景适配和效率为主，避免盲目追求SOTA排名带来的成本和风险，提高资源使用效率。",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "未来三年内，AI行业不会出现泡沫，当前的回调主要是市场情绪和二级市场投资人故意引导的调整。",
+      "speaker": "朱啸虎",
+      "topic": "AI泡沫判断与市场动态",
+      "timestamp": "[0:04-0:16]",
+      "confidence": "high",
+      "terry_relevance": "帮助判断AI产业投资环境，评估市场情绪对价格波动的影响。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "claim": "OpenAI的战略重心已从单纯追求AGI转向开发实际应用和超级APP入口，打造日活型使用场景以提升用户粘性和防守能力。",
+      "speaker": "朱啸虎",
+      "topic": "AI产品战略与超级APP生态",
+      "timestamp": "[0:57-2:00]",
+      "confidence": "high",
+      "terry_relevance": "指导AI产品策略聚焦场景落地，明确竞争核心在用户时长和活跃度。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "claim": "当前AI技术和算力资源已足够支撑新一波行业爆发，算力消耗增长迅猛，但基础设施和电力成瓶颈。",
+      "speaker": "朱啸虎",
+      "topic": "技术能力与基础设施瓶颈",
+      "timestamp": "[8:30-9:59]",
+      "confidence": "high",
+      "terry_relevance": "评估技术资源限制与行业扩张之间的矛盾，为技术和投资策略提供风险预警。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "claim": "数据中心和算力是限制当前AI发展的核心资源瓶颈",
+      "speaker": "朱啸虎",
+      "topic": "AI基础设施",
+      "timestamp": "[12:18-12:21]",
+      "confidence": "high",
+      "terry_relevance": "指导AI技术和基础设施投资判断，关注算力瓶颈",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "claim": "OpenAI的未来关键在于能否在C端市场成功建立长期社交网络",
+      "speaker": "朱啸虎",
+      "topic": "AI公司战略评估",
+      "timestamp": "[13:38-13:37]",
+      "confidence": "high",
+      "terry_relevance": "辨别投资标的的长期潜力，重视用户生态和产品战略",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "claim": "投资时应避免共识高度集中的赛道，选择相对偏小众或错开15度的领域",
+      "speaker": "朱啸虎",
+      "topic": "投资策略",
+      "timestamp": "[20:25-20:33]",
+      "confidence": "high",
+      "terry_relevance": "帮助构建差异化投资组合，规避纯粹的高度竞赛赛道",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "claim": "中国的供应链成体系优势是其制造业强大的核心竞争力，难以被外部竞争者复制。",
+      "speaker": "朱啸虎",
+      "topic": "供应链优势",
+      "timestamp": "[22:39-23:02]",
+      "confidence": "high",
+      "terry_relevance": "指导对供应链复杂产品的投资判断，识别难以复制的产业链壁垒。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "claim": "投资智能穿戴设备应关注为多个层级公司提供的硬件解决方案，尤其在竞争激烈的市场中找准细分定位。",
+      "speaker": "朱啸虎",
+      "topic": "智能穿戴设备投资",
+      "timestamp": "[23:06-23:33]",
+      "confidence": "high",
+      "terry_relevance": "提供未来智能穿戴投资方向，尤其第三方方案的价值及AR趋势。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "claim": "进入AI赛道投资，应错开大厂关注的焦点15度，避开模型和机器人等主流高竞争领域，聚焦垂直场景和稀化部署以发现有潜力的项目。",
+      "speaker": "朱啸虎",
+      "topic": "AI投资策略",
+      "timestamp": "[29:33-31:01]",
+      "confidence": "high",
+      "terry_relevance": "为Terry团队识别低竞争、高契合度AI投资方向提供思路和策略。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "claim": "消费企业上市融资需要达到至少1亿美金利润，2B软件企业需达到10亿人民币收入才有上市价值",
+      "speaker": "朱啸虎",
+      "topic": "融资标准",
+      "timestamp": "[33:05-33:21]",
+      "confidence": "high",
+      "terry_relevance": "判断融资时机与上市门槛，指导AI创业投资决策",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "claim": "当前VC圈共识高度集中，若商业化无法兑现，则共识将成为投资泡沫",
+      "speaker": "朱啸虎",
+      "topic": "市场泡沫风险",
+      "timestamp": "[38:03-39:12]",
+      "confidence": "high",
+      "terry_relevance": "帮助识别投资泡沫风险与理性评估共识价值",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "claim": "创业公司应聚焦实际用户场景和留存增长，更重视针对场景的小模型，而非追求技术上的SOTA排名",
+      "speaker": "朱啸虎",
+      "topic": "创业技术选择",
+      "timestamp": "[41:56-42:11]",
+      "confidence": "high",
+      "terry_relevance": "指导AI创业技术战略和投资选择",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    }
+  ],
+  "mental_models": [
+    {
+      "name": "泡沫识别的反直觉模型",
+      "definition": "当市场中大量人都在谈论泡沫时，泡沫往往并未真正形成，反而是市场调整的信号。",
+      "source_observation": "朱啸虎强调，‘大家都在讲泡沫的时候，泡沫肯定是没到的’，暗示情绪传导和市场行为背后的逻辑。",
+      "timestamp": "[0:04-0:10]",
+      "where_it_applies": [
+        "资本市场泡沫判断",
+        "科技投资周期分析"
+      ],
+      "where_it_fails": "市场一旦真正过热并形成泡沫，早期警示可能仍不明确，有可能被情绪掩盖。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "name": "超级APP入口竞争模型",
+      "definition": "AI和互联网产品竞争核心在于争夺用户日活时长和社交关系网以及高频使用的超级应用入口。",
+      "source_observation": "从OpenAI到国内巨头都聚焦‘日活’和‘群聊’这类场景，体现日活切入战略的重要性。",
+      "timestamp": "[1:00-2:04]",
+      "where_it_applies": [
+        "AI产品设计与用户留存",
+        "互联网生态构建",
+        "投资机会评估"
+      ],
+      "where_it_fails": "忽视了可能出现的跨界入口或非传统入口竞争形态，过度依赖社交网络模式。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "name": "错开共识赛道模型",
+      "definition": "在投资时避免参与高度共识和竞争激烈的赛道，选择相似但偏离主流15度的领域，从而获得更高投资回报和较低竞争压力",
+      "source_observation": "朱啸虎提到不投资共识高度集中的赛道，如人形机器人，而是选择干活机器人等相邻但不重叠的赛道",
+      "timestamp": "[20:25-20:33]",
+      "where_it_applies": [
+        "AI创业投资",
+        "新兴技术赛道投资",
+        "竞争激烈市场"
+      ],
+      "where_it_fails": "可能错失头部赛道爆发机会或难以找到真正优质偏离细分领域",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "name": "技术周期加速模型",
+      "definition": "技术发展周期在各大技术领域反复演进但速度不断加快，新一代技术的普及速度远超前代",
+      "source_observation": "本轮AI周期与此前芯片、印刷周期相似但速度更快，达到PC时代6倍、移动时代3倍",
+      "timestamp": "[18:20-18:38]",
+      "where_it_applies": [
+        "技术发展趋势判断",
+        "投资节奏把握",
+        "产品规划"
+      ],
+      "where_it_fails": "忽略技术或市场本质变革导致示意失真",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "name": "错开15度投资视角",
+      "definition": "在竞争激烈的主流赛道旁边寻找相邻但不同角度的机会，以避开一线大厂直接竞争，获取潜在高收益的投资标的。",
+      "source_observation": "朱啸虎提到过去三年投资策略是错开大厂眼睛15度，避开主流如大模型和机器人赛道，转向垂直应用和稀化部署（30:39-31:01）",
+      "timestamp": "[30:39-31:01]",
+      "where_it_applies": [
+        "AI产业投资",
+        "新兴技术投资",
+        "高竞争行业创业投资策略"
+      ],
+      "where_it_fails": "当错开角度过大，可能背离产业核心机会或市场规模不足时。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "name": "稀化部署模式",
+      "definition": "使用较小规模的模型部署于具体垂直场景，实现资源优化和差异化竞争，规避大厂在通用模型领域的优势。",
+      "source_observation": "提及用30B参数小模型做垂直应用稀化部署，避开大厂三条马路（24:35-24:41）",
+      "timestamp": "[24:35-24:41]",
+      "where_it_applies": [
+        "AI垂直场景应用",
+        "中小型AI产品开发",
+        "初创AI企业市场切入"
+      ],
+      "where_it_fails": "大型通用模型能力压倒性优势时，稀化部署可能性能不足导致市场竞争力弱。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "name": "共识错开15度",
+      "definition": "避开市场VR统一共识的热门赛道，寻找差异化路径以降低风险并获得潜在超额回报",
+      "source_observation": "‘我们只是要偏力15度，我们离开这个共识太集中的赛道’",
+      "timestamp": "[39:52-39:56]",
+      "where_it_applies": [
+        "风投投资决策",
+        "创业项目选择",
+        "泡沫风险管理"
+      ],
+      "where_it_fails": "若差异化赛道过于偏离市场趋势，可能失去成长机会",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "name": "商业化与共识脱节风险模型",
+      "definition": "市场形成共识后若未能有效转换为商业化收益，则共识本身可能形成泡沫，导致资本亏损",
+      "source_observation": "‘共识如果商业化一直实现不了，那就是泡沫……这很大的风险点’",
+      "timestamp": "[38:03-39:12]",
+      "where_it_applies": [
+        "风险投资",
+        "市场泡沫分析",
+        "创业项目商业化评估"
+      ],
+      "where_it_fails": "部分共识虽然短期商业化差但长期能实现则不适用",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    }
+  ],
+  "decision_rules": [
+    {
+      "rule": "当多数市场参与者频繁谈论泡沫风险时，投资人应警惕这可能是调整前的市场情绪传导而非真实泡沫，避免盲目跟风抛售。",
+      "scope": "AI及科技板块投资决策",
+      "anti_pattern": "看到“泡沫”说法即刻恐慌撤资，忽视行业基本面和技术进展。",
+      "timestamp": "[0:04-0:16]",
+      "source_reasoning": "访谈中指出二级市场投资人故意引导散户产生恐慌，是为了制造短期回调机会。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "rule": "在AI产品竞争中，应优先布局能产生日活并具备社交关系复用的新入口，而非单纯追求前沿技术突破带来的宏大愿景。",
+      "scope": "AI产品战略规划",
+      "anti_pattern": "过度关注AGI或技术原型，忽视实际用户使用场景和粘性。",
+      "timestamp": "[0:57-2:00]",
+      "source_reasoning": "访谈强调OpenAI聚焦日活场景和超级APP入口建立，用户粘性成为防守核心。",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "rule": "当AI创业赛道共识高度集中过热时，应避免直接竞争，选择相邻但差异化的细分方向投资",
+      "scope": "AI产业投资决策",
+      "anti_pattern": "盲目跟风投资热门赛道导致竞争白热化和回报降低",
+      "timestamp": "[20:25-20:33]",
+      "source_reasoning": "通过错开共识赛道15度，降低竞争风险，提高新兴赛道投资收益",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "rule": "面对快速加速的技术周期，应提前布局并重视基础设施和算力瓶颈，以支持后续爆发性增长",
+      "scope": "技术及产业发展判断，投资规划",
+      "anti_pattern": "忽略基础设施限制，仓促投入最终支撑力不足",
+      "timestamp": "[12:18-12:21, 18:38-18:43]",
+      "source_reasoning": "算力和数据中心资源限制是AI发展的核心障碍，提前解决才能抓住爆发期机遇",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "rule": "当大厂集中资源在主流通用AI模型时，投资者应优先寻找大厂不愿意做的垂直应用和稀化部署场景。",
+      "scope": "AI及科技创业投资",
+      "anti_pattern": "盲目追逐主流大模型，忽视细分场景和实际落地壁垒。",
+      "timestamp": "[24:55-25:07]",
+      "source_reasoning": "大厂资源有限且偏好通用模型，留出细分市场空间留给初创公司挖掘价值。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "rule": "投资初创项目时，快速判断潜力的面谈时间为10分钟筛选是否进入深入，30分钟以上则表明高兴趣，核心关注点在于市场规模、壁垒及成功路径。",
+      "scope": "创业投资项目面谈决策",
+      "anti_pattern": "长时间闲聊无重点，忽略快速筛选和有效沟通的重要性。",
+      "timestamp": "[31:36-31:59]",
+      "source_reasoning": "提高投资效率，避免资源浪费，同时保证对关键问题的充分了解。",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    }
+  ],
+  "entities": {
+    "people": [
+      "朱啸虎",
+      "Sam Orton",
+      "老邝",
+      "梁文峰",
+      "Unknown interviewer"
+    ],
+    "orgs": [
+      "OpenAI",
+      "谷歌",
+      "阿里巴巴",
+      "腾讯",
+      "美团",
+      "微软",
+      "阿里",
+      "腾旋",
+      "Deepseak",
+      "大厂",
+      "金山"
+    ],
+    "products": [
+      "ChatGPT",
+      "Pulse",
+      "群聊功能",
+      "微信",
+      "WhatsApp",
+      "Instagram",
+      "Messenger",
+      "XAMLUTAMENT",
+      "AGA",
+      "拓主",
+      "T-Share",
+      "LaFaz",
+      "Minas",
+      "Liblib",
+      "Deep City",
+      "OpenAI",
+      "ChatGPT (切GPT)",
+      "AppleTV"
+    ],
+    "papers": [],
+    "concepts": [
+      "AI泡沫",
+      "超级APP",
+      "日活（DAU）",
+      "AGI",
+      "群聊",
+      "数据中心",
+      "GPU算力",
+      "Token成本",
+      "AI入口之争",
+      "API商业模式",
+      "开源生态",
+      "记忆窗口",
+      "Token消耗",
+      "软硬体",
+      "供应链优势",
+      "智能穿戴设备",
+      "AR化",
+      "AI通用模型",
+      "垂直AZN",
+      "稀化部署",
+      "错开15度投资",
+      "共识错开15度",
+      "上市融资门槛",
+      "商业化兑现",
+      "SOTA模型",
+      "Token销号",
+      "创业生态",
+      "AI发展",
+      "基础设施优势",
+      "人类共同意识"
+    ]
+  },
+  "open_questions": [
+    {
+      "question": "未来AI超级入口之争的胜负关键会是什么？是技术创新、用户时长还是社交关系链的重新构建？",
+      "why_it_matters": "明确未来竞争焦点有助于产品定位和投资布局。",
+      "timestamp": "[1:00-2:20]",
+      "motif": "AI产品战略与市场竞争",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "question": "中国在数据中心和电力基础设施上的快速建设将如何影响国内AI产业的扩展速度与竞争力？",
+      "why_it_matters": "基础设施瓶颈是制约技术爆发的重要因素，直接关联产业可持续性。",
+      "timestamp": "[8:30-9:59]",
+      "motif": "AI技术发展与基础设施",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "question": "如何科学判断当前AI市场是否存在泡沫，避免被二级市场情绪误导？",
+      "why_it_matters": "防止决策失误，保障投资安全和理性分析。",
+      "timestamp": "[0:00-0:20]",
+      "motif": "投资判断",
+      "chunk_id": "BV13AmpBiE2o_c001"
+    },
+    {
+      "question": "OpenAI能否成功建立稳固的C端社交生态，以维持其行业领导地位？",
+      "why_it_matters": "C端生态是AI公司长期用户留存和商业变现的关键",
+      "timestamp": "[13:38-13:44]",
+      "motif": "AI产品生态建设",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "question": "面对大厂低价补贴Token带来的竞争压力，创业公司应采取何种商业化策略实现差异化？",
+      "why_it_matters": "Token成本是创业公司盈利和可持续发展的关键瓶颈",
+      "timestamp": "[17:25-17:59]",
+      "motif": "AI创业商业模式",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "question": "中国的开源AI生态如何在全球AI生态体系中形成竞争优势？",
+      "why_it_matters": "开源生态有潜力打破私有公司对AI核心模型的控制，塑造长期优势",
+      "timestamp": "[15:28-15:47]",
+      "motif": "中国AI产业生态",
+      "chunk_id": "BV13AmpBiE2o_c002"
+    },
+    {
+      "question": "AI赛道中如何有效发现大厂忽视的垂直应用市场？",
+      "why_it_matters": "这是找到差异化投资标的、规避大厂竞争压力的关键。",
+      "timestamp": "[24:55-25:07]",
+      "motif": "AI产业投资策略",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "question": "怎样的创业者特质和行业经验更适合获得VC的投资？",
+      "why_it_matters": "理解适合融资的创业者画像有利于筛选和辅导项目。",
+      "timestamp": "[32:16-32:35]",
+      "motif": "创业投资判断",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "question": "面对大厂主导的生态，初创公司如何找到属于自己的稳固生态位？",
+      "why_it_matters": "帮助创业公司定位和长期生存发展，在生态竞争中实现差异化。",
+      "timestamp": "[26:20-27:10]",
+      "motif": "创业生态构建",
+      "chunk_id": "BV13AmpBiE2o_c003"
+    },
+    {
+      "question": "AI创业的商业化路径如何与市场共识匹配？",
+      "why_it_matters": "判断投资价值和避免泡沫风险的关键问题",
+      "timestamp": "[38:03-39:12]",
+      "motif": "投资泡沫风险与商业化兑现",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "question": "AI创业团队应如何在红海市场中通过用户体验实现差异化？",
+      "why_it_matters": "指导创业模式和产品设计，提高市场竞争力",
+      "timestamp": "[35:06-35:29]",
+      "motif": "创业创新与用户体验",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    },
+    {
+      "question": "大模型创业公司未来的核心竞争力是否在于模型规模，还是场景适配和用户数据？",
+      "why_it_matters": "影响技术研发方向和投资布局的重要问题",
+      "timestamp": "[41:56-42:11]",
+      "motif": "技术战略与模型选择",
+      "chunk_id": "BV13AmpBiE2o_c004"
+    }
+  ],
+  "asr_caveats": [
+    {
+      "type": "low_confidence_entity_names",
+      "note": "人名、机构名出现如‘Sam Orton’、‘老邝’可能为识别错误，需人工核对。"
+    },
+    {
+      "type": "paraphrase_quote_verification",
+      "note": "部分引用为意译或复述，需核实原文准确表达，如‘在所有人都谈论泡沫的时候，泡沫其实还未真正来临’等。"
+    },
+    {
+      "type": "timestamp_alignment",
+      "note": "部分高价值内容时间点范围较宽，语义承载分散，使用时需结合上下文斟酌。"
+    }
+  ],
+  "source": "https://www.bilibili.com/video/BV13AmpBiE2o",
+  "published_at": "2025-12-09",
+  "duration": "46:27",
+  "is_interview": true
+}

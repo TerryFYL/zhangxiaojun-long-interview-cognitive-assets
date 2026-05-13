@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-13T11:20:26",
+  "source_material": "张小珺商业访谈录 / Bilibili space 280780745",
+  "raw_transcripts_included": false,
+  "chunk_cache_included": false,
+  "synthesis_files": [
+    "agent.md",
+    "material_processing_design.md",
+    "cognitive_boundary_cards.md",
+    "interview_container_analysis.md",
+    "question_depth_framework.md",
+    "long_interview_mining_protocol.md",
+    "index.html"
+  ]
+}
